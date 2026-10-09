@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shutterdays</title>
+    <meta
+      name="description"
+      content="Shutterdays is a photo journal: one still photo a day, Sunday to Saturday. Finish the week and it develops into a reel."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #fffbf4;
+        --sand: #d8cfbc;
+        --taupe: #9d978a;
+        --rule: #2e2f27;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #000;
+        color: var(--ink);
+        font:
+          17px/1.6 -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 72px 16px 48px;
+      }
+      h1 {
+        font-size: clamp(44px, 9vw, 72px);
+        line-height: 1;
+        letter-spacing: -0.02em;
+        margin: 0;
+      }
+      .lead {
+        font-size: 22px;
+        color: var(--sand);
+        margin: 12px 0 0;
+      }
+      .intro {
+        max-width: 620px;
+        color: var(--sand);
+        margin: 28px 0 0;
+      }
+      .status {
+        display: inline-block;
+        margin-top: 24px;
+        padding: 6px 14px;
+        border: 1px solid var(--rule);
+        border-radius: 999px;
+        color: var(--taupe);
+        font-size: 14px;
+      }
+      section {
+        margin-top: 80px;
+      }
+      h2 {
+        font-size: 28px;
+        margin: 0 0 8px;
+      }
+      .sub {
+        color: var(--taupe);
+        margin: 0 0 28px;
+        max-width: 620px;
+      }
+      .shots {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 28px;
+      }
+      figure {
+        margin: 0;
+      }
+      figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 22px;
+        border: 1px solid var(--rule);
+        display: block;
+      }
+      figcaption {
+        margin-top: 12px;
+        color: var(--sand);
+        font-size: 15px;
+      }
+      figcaption strong {
+        color: var(--ink);
+        display: block;
+        font-size: 16px;
+      }
+      ul.rules {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 14px;
+        max-width: 680px;
+      }
+      ul.rules li {
+        color: var(--sand);
+        padding-left: 20px;
+        position: relative;
+      }
+      ul.rules li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.65em;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--sand);
+      }
+      ul.rules strong {
+        color: var(--ink);
+      }
+      a {
+        color: var(--ink);
+      }
+      footer {
+        margin-top: 96px;
+        padding-top: 24px;
+        border-top: 1px solid var(--rule);
+        color: var(--taupe);
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Shutterdays</h1>
+      <p class="lead">One frame a day.</p>
+      <p class="intro">
+        Shutterdays is a photo journal for still photos only. Post one photo a day, Sunday to
+        Saturday. A desk, a coffee, a run, a storm rolling in: every frame counts the same. Finish
+        all seven and your week develops into a reel.
+      </p>
+      <span class="status">In testing with a small group</span>
+
+      <section>
+        <h2>How it works</h2>
+        <p class="sub">
+          Photos always show at their true shape, never cropped. Everything else is one gesture
+          away.
+        </p>
+        <div class="shots">
+          <figure>
+            <img
+              src="images/feed.jpg"
+              alt="The feed: a grid of photos at their true shapes"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>The feed</strong>Photos from your peers first, then people you follow, then
+              everyone else.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/viewfinder.jpg"
+              alt="A photo showing its camera settings along the edges like a viewfinder"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Tap: the viewfinder</strong>Camera, focal length, shutter, aperture and ISO,
+              written along the edges of the photo.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/postcard.jpg"
+              alt="A photo flipped over like a postcard with a handwritten note"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Hold: the postcard</strong>Turn a photo over to read its field note, a short
+              line about the day.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/reel.jpg"
+              alt="A week of seven photos laid out as a dated contact sheet"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Seven days, one reel</strong>A full week develops into a contact sheet that
+              plays frame by frame. Each week's border design is a surprise, and some never come
+              back.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/profile.jpg" alt="A profile with photos and reels" loading="lazy" />
+            <figcaption>
+              <strong>Your profile</strong>Your photos and reels, the weeks you completed and the
+              days you posted.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/sign-in.jpg" alt="The sign-in screen" loading="lazy" />
+            <figcaption>
+              <strong>No passwords</strong>Sign in with a 6-digit code sent to your email.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>What we won't do</h2>
+        <ul class="rules">
+          <li><strong>No video and no endless short-form feed.</strong> Still photos only.</li>
+          <li><strong>No follower counts.</strong> Not on your profile, not on anyone's.</li>
+          <li>
+            <strong>No public likes.</strong> Double-tap gives an award; only the photo's owner sees
+            how many.
+          </li>
+          <li>
+            <strong>No engagement ranking.</strong> The feed is people you know first, newest first.
+          </li>
+          <li>
+            <strong>No punishment.</strong> Miss a day and that week's reel doesn't develop, but
+            your photos stay.
+          </li>
+          <li>
+            <strong>No location.</strong> GPS is removed from every photo before it leaves your
+            phone.
+          </li>
+        </ul>
+      </section>
+
+      <section id="support">
+        <h2>Support</h2>
+        <p class="sub">
+          Questions, problems or feedback from testing: email
+          <a href="mailto:hernandezj@shutterdaysdev.tech">hernandezj@shutterdaysdev.tech</a>. You
+          can delete your account at any time in the app under Settings.
+        </p>
+      </section>
+
+      <footer>
+        <span>Shutterdays</span>
+        <a href="privacy/">Privacy policy</a>
+        <a href="#support">Support</a>
+      </footer>
+    </main>
+  </body>
+</html>
